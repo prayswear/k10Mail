@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.c0124.k9.c0124.gui.accounts_keys.activity.AccountsKeys">
+
+    <!--
+    The first two item is hidden.
+     Refresh - no need.
+     ReCreate Keys - duplicated
+    -->
+    <item android:id="@+id/c0124_menu_accounts_keys_refresh" android:title="@string/c0124_title_accounts_keys_menu_refresh"
+        android:orderInCategory="100" android:showAsAction="never" android:visible="false"/>
+
+    <item android:id="@+id/c0124_menu_accounts_keys_recreate_keys" android:title="@string/c0124_title_accounts_keys_menu_recreate_keys"
+        android:orderInCategory="100" android:showAsAction="never" android:visible="false"/>
+
+    <item android:id="@+id/c0124_menu_accounts_keys_clear_all_keys" android:title="@string/c0124_menu_title_accounts_keys_clear_all_keys"
+        android:orderInCategory="100" android:showAsAction="never" />
+
+    <item android:id="@+id/c0124_menu_accounts_keys_export_all_keys" android:title="@string/c0124_menu_title_accounts_keys_export_keys"
+        android:orderInCategory="100" android:showAsAction="never" />
+
+    <item android:id="@+id/c0124_menu_accounts_keys_import_all_keys" android:title="@string/c0124_menu_title_accounts_keys_import_keys"
+        android:orderInCategory="100" android:showAsAction="never" />
+
+</menu>

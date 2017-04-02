@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:fadingEdge="none"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <TextView
+            android:id="@+id/title_account_setup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/account_setup_names_info"
+            android:textSize="18sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/account_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/account_setup_names_account_name_label"
+            android:hint="@string/account_setup_names_account_name_label"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/account_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/account_setup_names_user_name_label"
+            android:ems="10"
+            android:hint="@string/account_setup_names_user_name_label"
+            android:inputType="textPersonName"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginTop="8dp"
+            android:background="#FFF8DC" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:fadingEdge="none"
+        android:padding="6dip"
+        android:scrollbarStyle="outsideInset" >
+
+        <WebView
+        android:id="@+id/webview_welcome_afteraccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scrollbars="none" />
+        <!--
+        <TextView
+            android:id="@+id/displayingTextAfterSetup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:ems="20"
+            android:text="T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n T\n" >
+        </TextView>
+        -->
+    </ScrollView>
+
+    <include layout="@layout/wizard_done" />
+
+</LinearLayout>

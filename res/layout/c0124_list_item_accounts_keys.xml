@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:focusable="false"
+    android:paddingLeft="8dip"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:id="@+id/c0124_accounts_keys_list_item"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="foo@soo.com"
+        android:id="@+id/c0124_text_view_accounts_keys_item_email_account" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:id="@+id/c0124_text_view_accounts_keys_item_create_time"
+                android:layout_gravity="left|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:paddingTop="5dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:id="@+id/c0124_text_view_accounts_keys_item_token"
+                android:layout_gravity="left|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:paddingTop="2dip"
+                android:paddingBottom="2dip"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="false"
+            android:id="@+id/c0124_progress_bar_accounts_keys_key_refresh"
+            android:visibility="visible"
+            android:layout_marginLeft="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/c0124_accounts_keys_list_refresh_button_text"
+            android:focusable="false"
+            android:id="@+id/c0124_button_accounts_keys_refresh"
+            android:layout_gravity="end"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

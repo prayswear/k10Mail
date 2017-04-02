@@ -1,0 +1,31 @@
+Change from k9 to c10
+
+Class PgpData
+public boolean hasEncryptionKeys() {
+    	return true;
+        //return (mEncryptionKeyIds != null) && (mEncryptionKeyIds.length > 0);
+}
+
+One of those 3 activities
+
+
+   * src/com/c0124/k9/activity/Accounts.java
+   *  src/com/c0124/k9/activity/FolderList.java
+   *  src/com/c0124/k9/activity/MessageList.java
+
+Accounts is the main activity
+
+If no account found, call com.c0124.k9.setup.WelcomeMessage
+
+Add email provider in res\xml\providers.xml
+
+MessageCryptoView.java - need to render application/pgp-encrypted
+
+MessageCompose.java 
+
+initializeCrypto();
+        final CryptoProvider crypto = mAccount.getCryptoProvider();
+ 
+if (crypto.isAvailable(this)) {
+mEncryptLayout.setVisibility(View.VISIBLE);
+  
